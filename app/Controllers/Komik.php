@@ -18,7 +18,7 @@ class Komik extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Daftar Komis',
+            'title' => 'Daftar Komik',
             'komik' => $this->komikModel->getKomik()
         ];
 
@@ -130,7 +130,7 @@ class Komik extends BaseController
     public function edit($slug)
     {
         $data = [
-            'title' => 'Form Tambah Komik',
+            'title' => 'Form Ubah Komik',
             'validation' => \Config\Services::validation(),
             'komik' => $this->komikModel->getKomik($slug)
         ];
